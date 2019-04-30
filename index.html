@@ -1,1 +1,96 @@
-# <html><head><title>Survey Form</title><link href=/styles/style.css rel=stylesheet type=text/css></head><body></body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link href="styles/style.css" rel="stylesheet"+ type="text/css">
+    </head>
+    
+    <body>
+        <h1 id="title">The Big Nature Quiz</h1>
+        <p id="description">Answer questions, win prizes; welcome to a quiz inspired by David Attenborough's nature documentaries.</p>
+        
+        <form id="survey-form">
+        <label for="name" id="name-label">Your Name:</label><br>
+            <input id="name" type="text" name="name" placeholder="David Attenborough" required><br>
+        <label for="email" id="email-label">Your e-mail</label><br>
+            <input id="email" type="email" name="email" placeholder="david@bbc.co.uk" required><br>
+        <label for="number" id="number-label" required>Your age<br>(must be 18 or over to participate)</label><br>
+            <input id="number" type="number" min="18" max="110" name="number" placeholder="92"><br>
+        <label for="dropdown" id="drop-label">Which continent are you from?</label><br>
+            
+        <select id="dropdown" name="dropdown">
+           
+            <option value="africa">Africa</option>
+            <option value="antarctica">Antarctica</option>  
+            <option value="asia">Asia</option>
+            <option value="australia">Australia</option>
+            <option value="europe">Europe</option>
+            <option value="north">North America</option>
+            <option value="south">South America</option>
+        </select>  <br>
+            Select the real species<br>
+            Sharks:<br>
+            <label for="elf">
+            <input type="radio" id="elf" name="sharks" value="elf"> Elf Shark
+                </label><br>
+            <label for="goblin">
+            <input type="radio" id="goblin" name="sharks" value="goblin"> Goblin Shark
+                </label><br>
+            <label for="orc">
+            <input type="radio" id="orc" name="sharks" value="orc"> Orc Shark 
+                </label><br>
+            <label for="hobbit">
+            <input type="radio" id="hobbit" name="sharks" value="hobbit"> Hobbit Shark 
+                </label><br>
+            <br>
+            Fish:<br>
+            <label for="violin">
+            <input type="radio" id="violin" name="fish" value="violin"> Giant Violinfish
+                </label><br>
+            <label for="viola">
+            <input type="radio" id="viola" name="fish" value="viola"> Giant Violafish
+                </label><br>
+            <label for="guitar">
+            <input type="radio" id="guitar" name="fish" value="guitar"> Giant Guitarfish 
+                </label><br>
+            <label for="cello">
+            <input type="radio" id="cello" name="fish" value="cello"> Giant Cellofish 
+                </label><br>
+            Frogs:<br>
+                    <label for="paradoxical">
+            <input type="radio" id="paradoxical" name="frog" value="paradoxical"> Paradoxical Frog  
+                </label><br>
+            <label for="antithetical">
+            <input type="radio" id="antithetical" name="frog" value="antithetical">  Antithetical Frog
+                </label><br>
+            <label for="hyperbolic">
+            <input type="radio" id="hyperbolic" name="frog" value="hyperbolic">
+                Hyperbolic Frog
+                </label><br>
+            <label for="contradictory">
+            <input type="radio" id="contradictory" name="frog" value="contradictory">
+                Contradictory Frog
+                </label><br><br>
+            
+            <label for="monkey">
+            Which of the following are made-up species of animals (select all that apply)<br>
+            <input type="checkbox" id="monkey" value="anglosaxon"> Anglosaxon Monkey
+            </label><br>
+            <label for="beetle">
+            <input type="checkbox" id="beetle" value="colon"> Colon Rectum 
+            </label><br>
+            <label for="fish">
+            <input type="checkbox" id="fish" value="sarcastic"> Sarcastic Fringefish
+            </label><br>
+            <label for="wolf">
+            <input type="checkbox" id="wolf" value="surfer"> Surfer Wolf 
+            </label><br>
+            <br>
+            What is your favourite animal?<br>
+            <textarea class="textinput" rows="9"></textarea>
+            
+            <button id="submit" type="submit" value="submit">Submit</button>
+        </form>
+    </body>
+    
+</html>
