@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Survey Form</title>
-        <link href="styles/style.css" rel="stylesheet"+ type="text/css">
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
     </head>
     
     <body>
-        <h1 id="title">The Big Nature Quiz</h1>
-        <p id="description">Answer questions, win prizes; welcome to a quiz inspired by David Attenborough's nature documentaries.</p>
+        <div id="main">
+        <div class="title"><h1 id="title">The Mini Nature Quiz</h1></div>
+        <p id="description">Answer questions, win nothing <br> Welcome to a quiz inspired by David Attenborough's nature documentaries.</p>
         
         <form id="survey-form">
-        <label for="name" id="name-label">Your Name:</label><br>
-            <input id="name" type="text" name="name" placeholder="David Attenborough" required><br>
-        <label for="email" id="email-label">Your e-mail</label><br>
-            <input id="email" type="email" name="email" placeholder="david@bbc.co.uk" required><br>
-        <label for="number" id="number-label" required>Your age<br>(must be 18 or over to participate)</label><br>
-            <input id="number" type="number" min="18" max="110" name="number" placeholder="92"><br>
-        <label for="dropdown" id="drop-label">Which continent are you from?</label><br>
-            
-        <select id="dropdown" name="dropdown">
-           
-            <option value="africa">Africa</option>
-            <option value="antarctica">Antarctica</option>  
-            <option value="asia">Asia</option>
-            <option value="australia">Australia</option>
-            <option value="europe">Europe</option>
-            <option value="north">North America</option>
-            <option value="south">South America</option>
-        </select>  <br>
-            Select the real species<br>
+            <div class="info">
+                <label for="name" id="name-label">Your Name:</label><br>
+                    <input id="name" type="text" name="name" placeholder="David Attenborough" required><br>
+                <label for="email" id="email-label">Your e-mail</label><br>
+                    <input id="email" type="email" name="email" placeholder="david@bbc.co.uk" required><br>
+                <label for="number" id="number-label">Your age (must be 18 or over to participate)</label><br>
+                    <input id="number" type="number" min="18" max="110" name="number" placeholder="92" required><br>
+            </div>
+
+              <label for="dropdown" id="drop-label">Which continent are you from?</label>
+                        <div class="dropdown">
+                <select id="dropdown" name="dropdown">
+                    <option value="africa">Africa</option>
+                    <option value="antarctica">Antarctica</option>  
+                    <option value="asia">Asia</option>
+                    <option value="australia">Australia</option>
+                    <option value="europe">Europe</option>
+                    <option value="north">North America</option>
+                    <option value="south">South America</option>
+                </select>
+            </div>
+            <div class="radio">
+            Select the real species<br><br>
             Sharks:<br>
             <label for="elf">
             <input type="radio" id="elf" name="sharks" value="elf"> Elf Shark
@@ -55,7 +61,7 @@
                 </label><br>
             <label for="cello">
             <input type="radio" id="cello" name="fish" value="cello"> Giant Cellofish 
-                </label><br>
+                </label><br><br>
             Frogs:<br>
                     <label for="paradoxical">
             <input type="radio" id="paradoxical" name="frog" value="paradoxical"> Paradoxical Frog  
@@ -71,7 +77,8 @@
             <input type="radio" id="contradictory" name="frog" value="contradictory">
                 Contradictory Frog
                 </label><br><br>
-            
+            </div>
+            <div class="check">
             <label for="monkey">
             Which of the following are made-up species of animals (select all that apply)<br>
             <input type="checkbox" id="monkey" value="anglosaxon"> Anglosaxon Monkey
@@ -84,13 +91,15 @@
             </label><br>
             <label for="wolf">
             <input type="checkbox" id="wolf" value="surfer"> Surfer Wolf 
-            </label><br>
-            <br>
-            What is your favourite animal?<br>
-            <textarea class="textinput" rows="9"></textarea>
-            
+            </label>
+            </div>
+            <div class="textarea">
+            What are your favourite and least favourite animals, and why?<br>
+            <textarea class="textinput" rows="9" id="textinput"></textarea>
+            </div>
             <button id="submit" type="submit" value="submit">Submit</button>
         </form>
+    </div>
     </body>
     
 </html>
